@@ -2,7 +2,7 @@
 
 namespace Questao1
 {
-    class ContaBancaria
+    public class ContaBancaria
     {
 
         public int Numero { get; private set; }
