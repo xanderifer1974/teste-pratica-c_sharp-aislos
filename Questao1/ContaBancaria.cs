@@ -37,9 +37,5 @@ namespace Questao1
             return $"Conta {Numero}, Titular: {Titular}, Saldo: $ {Saldo:F2}";
         }
 
-
-
-
-
     }
 }
