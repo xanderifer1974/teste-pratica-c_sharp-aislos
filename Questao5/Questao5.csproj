@@ -37,16 +37,11 @@
     <Folder Include="Application\Handlers\" />
     <Folder Include="Application\Queries\Requests\" />
     <Folder Include="Application\Queries\Responses\" />
-    <Folder Include="Application\ViewModel\" />
-    <Folder Include="Businness\" />
-    <Folder Include="Businness\Interfaces\" />
-    <Folder Include="Domain\Interfaces\" />
     <Folder Include="Domain\Language\" />
     <Folder Include="Infrastructure\Database\CommandStore\Requests\" />
     <Folder Include="Infrastructure\Database\CommandStore\Responses\" />
     <Folder Include="Infrastructure\Database\QueryStore\Requests\" />
     <Folder Include="Infrastructure\Database\QueryStore\Responses\" />
-    <Folder Include="Infrastructure\Repositories\" />
   </ItemGroup>
 
 </Project>
