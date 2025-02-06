@@ -1,8 +1,19 @@
-using System;
+using Questao5.Businness.Interfaces;
+using Questao5.Domain.Interfaces;
+using Questao5.Domain.Responses;
 
 namespace Questao5.Businness;
 
-public class ContaCorrenteService
+public class ContaCorrenteService : IContaCorrenteService
 {
-    //Implementar interface e criar métodos tasks
+    private readonly IContaCorrenteRepository _contaCorrenteRepository;
+
+    public ContaCorrenteService(IContaCorrenteRepository contaCorrenteRepository)
+    {
+        _contaCorrenteRepository = contaCorrenteRepository;
+    }
+    public async Task<SaldoResponse> ConsultarSaldoAsync(string contaCorrenteId)
+    {
+         return await _contaCorrenteRepository.ConsultarSaldoAsync(contaCorrenteId);
+    }
 }
