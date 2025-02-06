@@ -18,8 +18,11 @@ builder.Services.AddSingleton(new DatabaseConfig { Name = builder.Configuration.
 builder.Services.AddSingleton<IDatabaseBootstrap, DatabaseBootstrap>();
 
 //Injeção de Dependência
- builder.Services.AddScoped<IContaCorrenteRepository, ContaCorrenteRepository>();
+builder.Services.AddScoped<IContaCorrenteRepository, ContaCorrenteRepository>();
 builder.Services.AddScoped<IContaCorrenteService, ContaCorrenteService>();
+
+builder.Services.AddScoped<IMovimentacaoRepository, MovimentacaoRepository>();
+builder.Services.AddScoped<IMovimentacaoService, MovimentacaoService>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

@@ -1,8 +1,8 @@
-using System;
+using Questao5.Domain.Entities;
 
 namespace Questao5.Domain.Interfaces;
 
 public interface IMovimentacaoRepository
 {
-    //Implementar a lógica, utilizar Task
+     Task<Movimento> MovimentarContaCorrenteAsync(string requisicaoId, string contaCorrenteId, decimal valor, char tipoMovimento);
 }
