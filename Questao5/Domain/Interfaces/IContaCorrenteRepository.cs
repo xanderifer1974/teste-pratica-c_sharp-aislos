@@ -1,9 +1,10 @@
 using System;
+using Questao5.Domain.Responses;
 
 namespace Questao5.Domain.Interfaces;
 
 public interface IContaCorrenteRepository
 {
-    //Implementar a Logica, utilizar Task
+    Task<SaldoResponse> ConsultarSaldoAsync(string contaCorrenteId);
 
 }
