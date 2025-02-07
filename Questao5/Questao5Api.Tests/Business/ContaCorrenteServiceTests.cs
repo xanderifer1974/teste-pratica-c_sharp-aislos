@@ -1,4 +1,3 @@
-using System;
 using Moq;
 using Questao5.Businness;
 using Questao5.Domain.Interfaces;
