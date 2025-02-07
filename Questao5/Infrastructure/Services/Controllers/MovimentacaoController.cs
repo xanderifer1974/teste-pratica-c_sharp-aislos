@@ -3,6 +3,7 @@ using System.Text;
 using Microsoft.AspNetCore.Mvc;
 using Questao5.Businness.Interfaces;
 using Questao5.Domain.Request;
+using Swashbuckle.AspNetCore.Annotations;
 
 namespace Questao5.Infrastructure.Services.Controllers
 {
@@ -17,7 +18,17 @@ namespace Questao5.Infrastructure.Services.Controllers
             _movimentacaoService = movimentacaoService;
         }
 
+        /// <summary>
+        /// Movimenta a conta corrente.
+        /// </summary>
+        /// <param name="request">Dados da movimentação.</param>
+        /// <returns>O resultado da movimentação.</returns>
+        /// <response code="200">Retorna o resultado da movimentação.</response>
+        /// <response code="400">Se ocorrer um erro durante a movimentação.</response>
         [HttpPost]
+        [SwaggerOperation(Summary = "Movimenta a conta corrente", Description = "No request do método para movimentação da conta corrente, deve ser informado  como parâmetro o ID da conta corrente, referente à coluna idcontacorrente da tabela contacorrente do SQLite. Copie o idcontacorrente da tabela para fazer o teste da API.")]
+        [SwaggerResponse(StatusCodes.Status200OK, "Retorna o resultado da movimentação.")]
+        [SwaggerResponse(StatusCodes.Status400BadRequest, "Se ocorrer um erro durante a movimentação.")]
         public async Task<IActionResult> MovimentarContaCorrente([FromBody] MovimentacaoRequest request)
         {
             try
