@@ -3,6 +3,7 @@ using Moq;
 using Questao5.Businness.Interfaces;
 using Questao5.Domain.Responses;
 using Questao5.Infrastructure.Services.Controllers;
+using Xunit;
 
 namespace Questao5.Questao5Api.Tests.Infraestructure.Services.Controllers;
 

@@ -2,6 +2,7 @@ using Moq;
 using Questao5.Businness;
 using Questao5.Domain.Interfaces;
 using Questao5.Domain.Responses;
+using Xunit;
 
 namespace Questao5.Questao5Api.Tests.Business;
 

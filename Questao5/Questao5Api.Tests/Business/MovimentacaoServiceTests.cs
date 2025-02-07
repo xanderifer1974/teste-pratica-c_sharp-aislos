@@ -3,6 +3,7 @@ using Questao5.Businness;
 using Questao5.Domain.Entities;
 using Questao5.Domain.Enumerators;
 using Questao5.Domain.Interfaces;
+using Xunit;
 
 namespace Questao5.Questao5Api.Tests.Business;
 

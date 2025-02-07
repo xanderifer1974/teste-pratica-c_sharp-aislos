@@ -1,4 +1,5 @@
 using Questao5.Domain.Request;
+using Xunit;
 
 namespace Questao5.Questao5Api.Tests.Domain.Request;
 
